@@ -1,4 +1,20 @@
-### General
+#### General
+## webmin Panel
+```
+nano /etc/apt/sources.list.d/Webmin.list
+
+## Webmin Panel
+deb http://download.webmin.com/download/repository sarge contrib
+##
+```
+
+```
+wget http://www.webmin.com/jcameron-key.asc
+sudo apt-key add jcameron-key.asc
+sudo apt-get update
+sudo apt-get install webmin libsocket6-perl libnet-inet6glue-perl
+```
+
 ## swap Allocation
 ```
 nano swap.sh
