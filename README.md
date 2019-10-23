@@ -1,4 +1,4 @@
-#### General
+### General
 ## webmin Panel
 ```
 nano /etc/apt/sources.list.d/Webmin.list
@@ -14,6 +14,18 @@ sudo apt-key add jcameron-key.asc
 sudo apt-get update
 sudo apt-get install webmin libsocket6-perl libnet-inet6glue-perl
 ```
+
+## git Utility
+
+```
+sudo apt-get -y install git
+```
+Configure git,
+```
+git config --global user.email "USER@DOMAIN.COM"
+git config --global user.name "USER"
+```
+
 
 ## swap Allocation
 ```
