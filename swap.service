@@ -1,0 +1,8 @@
+[Unit]
+Description=swap service
+
+[Service]
+ExecStart=/home/swap.sh
+
+[Install]
+WantedBy=multi-user.target
