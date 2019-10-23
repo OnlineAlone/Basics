@@ -17,7 +17,7 @@ User=www-data
 Group=www-data
 
 ; Letsencrypt-issued certificates will be written to this directory.
-Environment=CADDYPATH=/etc/ssl/caddy
+Environment=CADDYPATH=/etc/caddy/tls
 
 ; Always set "-root" to something safe in case it gets forgotten in the Caddyfile.
 ExecStart=/usr/local/bin/caddy -log stdout -agree=true -conf=/etc/caddy/Caddyfile -root=/var/tmp
@@ -41,10 +41,10 @@ PrivateDevices=false
 ProtectHome=true
 ; Make /usr, /boot, /etc and possibly some more folders read-only.
 ProtectSystem=full
-; … except /etc/ssl/caddy, because we want Letsencrypt-certificates there.
+; … except /etc/caddy/tls, because we want Letsencrypt-certificates there.
 ;   This merely retains r/w access rights, it does not add any new. Must still be writable on the host!
-ReadWritePaths=/etc/ssl/caddy
-ReadWriteDirectories=/etc/ssl/caddy
+ReadWritePaths=/etc/caddy/tls
+ReadWriteDirectories=/etc/caddy/tls
 
 ; The following additional security directives only work with systemd v229 or later.
 ; They further restrict privileges that can be gained by caddy. Uncomment if you like.
