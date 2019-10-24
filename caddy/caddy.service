@@ -1,5 +1,5 @@
 [Unit]
-Description=Caddy HTTP/2 web server
+Description=Caddy HTTP Server
 Documentation=https://caddyserver.com/docs
 After=network-online.target
 Wants=network-online.target systemd-networkd-wait-online.service
@@ -41,7 +41,7 @@ PrivateDevices=false
 ProtectHome=true
 ; Make /usr, /boot, /etc and possibly some more folders read-only.
 ProtectSystem=full
-; … except /etc/caddy/tls, because we want Letsencrypt-certificates there.
+; … except /etc/ssl/caddy, because we want Letsencrypt-certificates there.
 ;   This merely retains r/w access rights, it does not add any new. Must still be writable on the host!
 ReadWritePaths=/etc/caddy/tls
 ReadWriteDirectories=/etc/caddy/tls
