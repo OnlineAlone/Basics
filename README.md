@@ -10,6 +10,13 @@ sudo apt-get install software-properties-common
 sudo apt-get install dnsmasq fontconfig git htop libcrypto++-dev libfreetype6-dev liblcms2-dev libwebp-dev libxext6 libxrender1 libxslt1-dev libxslt1.1 libffi-dev ntp postfix python3-dev python-tk screen vim xfonts-75dpi xfonts-base zlib1g-dev apt-transport-https libsasl2-dev libldap2-dev libcups2-dev pv
 ```
 
+```
+sudo apt-get install -y python-dev python-setuptools build-essential python-mysqldb git \
+			ntp vim screen htop mariadb-server mariadb-common libmariadbclient-dev \
+			libxslt1.1 libxslt1-dev redis-server libssl-dev libcrypto++-dev postfix nginx \
+			supervisor python-pip fontconfig libxrender1 libxext6 xfonts-75dpi xfonts-base nodejs
+```            
+
 ## Adjust DNS
 
 ```
