@@ -1,4 +1,10 @@
-### General
+# General
+
+## Update system
+```
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
 ## webmin Panel
 ```
 nano /etc/apt/sources.list.d/Webmin.list
