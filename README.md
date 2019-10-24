@@ -17,6 +17,15 @@ sudo apt-get install -y python-dev python-setuptools build-essential python-mysq
 			supervisor python-pip fontconfig libxrender1 libxext6 xfonts-75dpi xfonts-base nodejs
 ```            
 
+## Java
+```
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-set-default
+```
+
+
 ## Adjust DNS
 
 ```
