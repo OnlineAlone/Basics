@@ -1,7 +1,7 @@
 # Caddy HTTP Server
 
 ```
-curl https://getcaddy.com | bash
+curl https://getcaddy.com | bash -s personal
 ```
 
 ```
