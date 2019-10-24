@@ -6,6 +6,17 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install software-properties-common
 ```
 
+## Adjust DNS
+
+```
+/etc/resolvconf/resolv.conf.d/base
+```
+
+```
+nameserver 208.67.222.222
+nameserver 208.67.220.220
+```
+
 ## webmin Panel
 ```
 nano /etc/apt/sources.list.d/Webmin.list
