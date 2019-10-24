@@ -76,3 +76,39 @@ systemctl daemon-reload
 systemctl enable swap.service
 systemctl start swap.service
 ```
+
+swap check
+```
+fatal: [localhost]: FAILED! => {
+    "changed": true, 
+    "cmd": "echo 1 | tee /proc/sys/vm/swappiness", 
+    "delta": "0:00:00.004467", 
+    "end": "2019-10-24 13:07:16.177009", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo 1 | tee /proc/sys/vm/swappiness", 
+            "_uses_shell": true, 
+            "argv": null, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "stdin": null, 
+            "stdin_add_newline": true, 
+            "strip_empty_ends": true, 
+            "warn": true
+        }
+    }, 
+    "msg": "non-zero return code", 
+    "rc": 1, 
+    "start": "2019-10-24 13:07:16.172542", 
+    "stderr": "tee: /proc/sys/vm/swappiness: Permission denied", 
+    "stderr_lines": [
+        "tee: /proc/sys/vm/swappiness: Permission denied"
+    ], 
+    "stdout": "1", 
+    "stdout_lines": [
+        "1"
+    ]
+}
+```
