@@ -1,7 +1,7 @@
 # PHP Modules
 
 ```
-sudo apt-get install python-software-properties
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 ```
