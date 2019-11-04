@@ -11,4 +11,8 @@ php -r "unlink('composer-setup.php');"
 ```
 sudo php composer.phar config -g github-oauth.github.com 9e5aecf37388b5f3f0c333a4d43158ec188c4544
 sudo php composer.phar update --no-plugins --no-scripts
+
+sudo php composer.phar install --no-plugins --no-scripts
+sudo php composer.phar update --no-plugins --no-scripts
+
 ```
