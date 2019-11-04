@@ -16,6 +16,7 @@ sudo a2enmod ssl
 sudo service apache2 restart
 ```
 
+```
 sudo a2enmod rewrite headers env dir mime proxy proxy_wstunnel proxy_http ssl
 sudo service apache2 restart
 ```
