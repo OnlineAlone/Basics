@@ -24,7 +24,7 @@ sudo apt-get -y install mariadb-server mariadb-client libmysqlclient-dev
 
 ln -s /var/lib/mysql/mysql.sock /var/run/mysqld/mysqld.sock
 
-
+sudo mysql_secure_installation
 
 mysql -u root -p
 CREATE DATABASE database CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
